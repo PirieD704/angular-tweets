@@ -1,28 +1,30 @@
 var tweetApp = angular.module('tweetApp', ['ngRoute']);
 
-tweetApp.directive('customMenu', function(){
-	return {
-		// this directive is only going to be abailable to elements bc of this
-		restrict: 'E', //E = Element A = Attribute, C = Class, M = Comment
-		templateUrl: "views/menu.html"
-	}
-})
+var tweets = {prop: "Property"}
 
 
 tweetApp.config(function($routeProvider){
 	$routeProvider.when('/',{
-		templateUrl: 'home.html',
-		controller: 'homeController'
+		templateUrl: 'views/home.html',
+		controller: 'tweetController'
 	})
 	// At /trump, load up the same template, but new controller
-	$routeProvider.when('/trump',{
-		templateUrl: 'home.html',
-		controller: 'trumpController'
+	$routeProvider.when('/:searchTerm',{
+		templateUrl: 'views/home.html',
+		controller: 'tweetController'
 	})
 	// At /hillary, load up the same template, but new controller
-	$routeProvider.when('/hillary',{
+	$routeProvider.when('/:searchTerm*',{
 		templateUrl: 'home.html',
 		controller: 'hillaryController'
 	})
-	$routeProvider.otherwise('/');
+// 	$routeProvider.otherwise('/');
 });
+
+// function Tweet(subject, content, time){
+// 	this.subject = subject;
+// 	this.tweet = content;
+// 	this.time = time;
+// }
+
+

@@ -1,4 +1,76 @@
-/* line 6, ../../compass/sass/views/_home.scss */
-* {
-  color: black;
+/* line 23, ../../compass/sass/styles.scss */
+body {
+  background-image: url("../../img/election-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* line 32, ../../compass/sass/styles.scss */
+.container .headline {
+  background-color: #000e89;
+  border: 5px solid #ca1504;
+  border-radius: 4px;
+  color: white;
+  margin-top: 30px;
+  opacity: .96;
+}
+/* line 39, ../../compass/sass/styles.scss */
+.container .headline h1 {
+  vertical-align: center;
+  text-align: center;
+}
+/* line 43, ../../compass/sass/styles.scss */
+.container .headline .candidate-select {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* line 47, ../../compass/sass/styles.scss */
+.container .headline .candidate-select button {
+  border: 3px solid white;
+  background-color: #ca1504;
+  border-radius: 4px;
+}
+/* line 56, ../../compass/sass/styles.scss */
+.container .the-tweets {
+  margin: auto;
+  font-family: 'News Cycle';
+  font-size: 20px;
+  width: 800px;
+  margin-top: 130px;
+  color: #222;
+}
+/* line 64, ../../compass/sass/styles.scss */
+.container .the-tweets img {
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 20px;
+  width: 75%;
+  height: 75%;
+}
+/* line 72, ../../compass/sass/styles.scss */
+.container .inner-tweets {
+  margin-top: 2px;
+  border-radius: 4px;
+  background-color: #eee;
+  padding: 10px;
+  opacity: .96;
+}
+/* line 78, ../../compass/sass/styles.scss */
+.container .inner-tweets .screen-name {
+  color: #444;
+  font-size: 15px;
+}
+/* line 81, ../../compass/sass/styles.scss */
+.container .inner-tweets .screen-name span {
+  color: #111;
+  font-size: 17px;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+}
+/* line 88, ../../compass/sass/styles.scss */
+.container .inner-tweets .retweet {
+  color: #444;
+  font-size: 15px;
 }

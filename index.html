@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="tweetApp" lang="en">
+<head>
+
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+
+	<!-- include bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
+		
+	</style>"
+
+	<!-- Includ jquery because bootstrap needs it -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<!-- Include bootstrap.js  -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Include angular. duh -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+	<!-- our angular animate module -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+
+	<!-- Include the routes module so we can use ng-view -->
+	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
+	<!-- Included cookies module -->
+	<script src="https://code.angularjs.org/1.5.8/angular-cookies.min.js"></script>
+
+	<!-- our js sheet -->
+	<script type="text/javascript" src="js/tweetModule.js"></script>
+	<script type="text/javascript" src="js/tweetController.js"></script>
+
+
+</head>
+<body ng-controller="tweetController">
+	
+<!-- 	<tweet-hello></tweet-hello>
+	<div hello-attr></div>
+	<div class="hello-class"></div>
+
+	<div turn-me-blue>Hover over me and I will console. I'm a custom directive</div>
+
+	<input type="text" ng-model="myColor" name=""> -->
+
+	<custom-menu></custom-menu>
+
+
+</body>
+</html>

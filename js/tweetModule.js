@@ -1,7 +1,7 @@
-var tweetApp = angular.module('tweetApp', ['ngRoute']);
+var tweetApp = angular.module('tweetApp', ['ngRoute', 'ngMaterial']);
 
-var tweets = {prop: "Property"}
-
+ var googlesSyntax = "";
+ var g = 2;
 
 tweetApp.config(function($routeProvider){
 	$routeProvider.when('/',{
@@ -15,8 +15,8 @@ tweetApp.config(function($routeProvider){
 	})
 	// At /hillary, load up the same template, but new controller
 	$routeProvider.when('/:searchTerm*',{
-		templateUrl: 'home.html',
-		controller: 'hillaryController'
+		templateUrl: 'views/home.html',
+		controller: 'tweetController'
 	})
 // 	$routeProvider.otherwise('/');
 });

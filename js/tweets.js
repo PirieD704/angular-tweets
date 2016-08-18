@@ -18,10 +18,12 @@ Tweet.prototype.getTimeSince = function(theDate) {
 	return (theDate - this.postTime) / 1000;
 }
 
+Tweet.prototype.company = "Twitter";
+
 var tweet1 = new Tweet('This is the title', 'dc4life', 'This is some content', 'https://pbs.twimg.com/profile_banners/30318720/1398951622/1500x500', 1471351423825);
 var tweet2 = new Tweet('This is the title2', 'dc4life', 'This is some content for my second tweet', 'https://pbs.twimg.com/profile_banners/30318720/1398951622/1500x500', 1471351429825);
 
 tweets.push(tweet1);
 tweets.push(tweet2);
 
-console.log(tweets);
+// console.log(tweets);

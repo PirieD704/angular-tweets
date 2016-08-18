@@ -1,4 +1,28 @@
-/* line 23, ../../compass/sass/styles.scss */
+/* line 36, ../../compass/sass/styles.scss */
+.candidate-select {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* line 40, ../../compass/sass/styles.scss */
+.candidate-select button {
+  border: 3px solid #ca1504;
+  background-color: #000e89;
+  border-radius: 4px;
+  color: white;
+}
+/* line 45, ../../compass/sass/styles.scss */
+.candidate-select button a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 49, ../../compass/sass/styles.scss */
+.candidate-select button .active a {
+  font-weight: bold;
+  color: red;
+}
+
+/* line 56, ../../compass/sass/styles.scss */
 body {
   background-image: url("../../img/election-background.jpg");
   background-repeat: no-repeat;
@@ -6,7 +30,7 @@ body {
   background-size: cover;
 }
 
-/* line 32, ../../compass/sass/styles.scss */
+/* line 65, ../../compass/sass/styles.scss */
 .container .headline {
   background-color: #000e89;
   border: 5px solid #ca1504;
@@ -15,24 +39,12 @@ body {
   margin-top: 30px;
   opacity: .96;
 }
-/* line 39, ../../compass/sass/styles.scss */
+/* line 72, ../../compass/sass/styles.scss */
 .container .headline h1 {
   vertical-align: center;
   text-align: center;
 }
-/* line 43, ../../compass/sass/styles.scss */
-.container .headline .candidate-select {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-/* line 47, ../../compass/sass/styles.scss */
-.container .headline .candidate-select button {
-  border: 3px solid white;
-  background-color: #ca1504;
-  border-radius: 4px;
-}
-/* line 56, ../../compass/sass/styles.scss */
+/* line 80, ../../compass/sass/styles.scss */
 .container .the-tweets {
   margin: auto;
   font-family: 'News Cycle';
@@ -41,7 +53,7 @@ body {
   margin-top: 130px;
   color: #222;
 }
-/* line 64, ../../compass/sass/styles.scss */
+/* line 88, ../../compass/sass/styles.scss */
 .container .the-tweets img {
   border-radius: 4px;
   text-align: center;
@@ -49,7 +61,7 @@ body {
   width: 75%;
   height: 75%;
 }
-/* line 72, ../../compass/sass/styles.scss */
+/* line 96, ../../compass/sass/styles.scss */
 .container .inner-tweets {
   margin-top: 2px;
   border-radius: 4px;
@@ -57,19 +69,19 @@ body {
   padding: 10px;
   opacity: .96;
 }
-/* line 78, ../../compass/sass/styles.scss */
+/* line 102, ../../compass/sass/styles.scss */
 .container .inner-tweets .screen-name {
   color: #444;
   font-size: 15px;
 }
-/* line 81, ../../compass/sass/styles.scss */
+/* line 105, ../../compass/sass/styles.scss */
 .container .inner-tweets .screen-name span {
   color: #111;
   font-size: 17px;
   font-family: 'Helvetica Neue';
   font-weight: bold;
 }
-/* line 88, ../../compass/sass/styles.scss */
+/* line 112, ../../compass/sass/styles.scss */
 .container .inner-tweets .retweet {
   color: #444;
   font-size: 15px;

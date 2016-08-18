@@ -20,6 +20,39 @@
 // @import "views/payment";
 // @import "views/account";
 
+// #menu ul{
+// 	clear: both;
+// 	margin-bottom: 20px;
+
+// }
+// #menu ul li{
+// 	float: left;
+// 	list-style-type: none:
+// 	margin-left: 20px;
+// 	font-size: 20px;
+// }
+
+
+.candidate-select{
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+	button{
+		border: 3px solid #ca1504;
+		background-color: #000e89;
+		border-radius: 4px;
+		color: white;
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+		.active a{
+			font-weight: bold;
+			color: red;
+		}
+	}
+}
+
 body{
 	background-image: url('../../img/election-background.jpg');
 	background-repeat: no-repeat;
@@ -40,16 +73,7 @@ body{
 			vertical-align: center;
 			text-align: center
 		}
-		.candidate-select{
-			text-align: center;
-			font-size: 24px;
-			margin-bottom: 20px;
-			button{
-				border: 3px solid white;
-				background-color: #ca1504;
-				border-radius: 4px;
-			}
-		}		
+		
 	}
 
 

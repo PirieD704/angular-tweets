@@ -1,6 +1,5 @@
 tweetApp.controller('tweetController', function($scope, $http, $location, $routeParams){
-	$scope.test = "I am working!";
-	$scope.tweets = tweets;
+	console.log($scope.test);
 
 	// console.log($location.hash);
 	console.log($routeParams);
@@ -20,12 +19,7 @@ tweetApp.controller('tweetController', function($scope, $http, $location, $route
 			console.log(tweetData.data.statuses);
 		},function failureFunction(tweetData){
 			console.log(tweetData);
-		}
-
-
-	)
-
-
-
+	});
+	$scope.test = "I am set";
 
 })
